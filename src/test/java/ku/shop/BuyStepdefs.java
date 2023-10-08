@@ -1,3 +1,4 @@
+// Urawit Jearrajinda 6410406932
 package ku.shop;
 
 import io.cucumber.java.en.Given;
@@ -33,6 +34,7 @@ public class BuyStepdefs {
         assertEquals(total, order.getTotal());
     }
 
+    // ส่วนที่เพิ่มเติมขึ้นมา
     @Then("product {string} stock should be {int}")
     public void product_stock_should_be(String name, int expectedStock) {
         Product prod = catalog.getProduct(name);
